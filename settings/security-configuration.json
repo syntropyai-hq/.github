@@ -1,6 +1,7 @@
 {
   "name": "baseline",
   "description": "Secret scanning with push protection, dependency alerts and private vulnerability reporting. No automatic pull requests or code scanning runs.",
+  "advanced_security": "enabled",
   "dependency_graph": "enabled",
   "dependabot_alerts": "enabled",
   "dependabot_security_updates": "disabled",
