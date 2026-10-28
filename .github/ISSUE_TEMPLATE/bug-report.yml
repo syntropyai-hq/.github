@@ -1,0 +1,43 @@
+name: Bug report
+description: Something doesn't work the way the documentation says it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One problem per issue. Security problems go through the repository's **Security** tab, never here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest steps that show the problem, with the exact commands.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The exact error and the relevant output, with keys, tokens, prompts and private paths removed.
+      render: text
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: The commit or version, the OS, and the hardware that matters here (CPU, GPU, memory).
+    validations:
+      required: true
+  - type: checkboxes
+    id: reproduced
+    attributes:
+      label: Evidence
+      options:
+        - label: I reproduced this myself, and the output above is from my run.
+          required: true
